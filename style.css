@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"poppins", sans-serif;
+
+    background: linear-gradient(120deg, #e2c35d, #d88771);
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #fff;
+}
+
+header{
+    font-size: 1.5rem;
+    min-height: 20vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+form{
+    background-color: black;
+    width: 90%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #fff;
+}
+
+form button{
+    background-color: #d88771;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+form button:hover{
+    color: #d88771;
+    background-color: #fff;
+}
+
+
+.todo-container{
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.todo-list{
+    list-style: none;
+    padding: 2rem;
+
+}
+
+.todo {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    background-color: #fff;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    color: #222;
+    transition: all 0.5 linear;
+}
+
+.todo li{
+    display: grid;
+    align-items: center;
+}
+
+.fall{
+    transition-duration: 0.4s;
+    transform: translateY(-8px) rotate(20deg);
+    opacity: 0;
+}
+
+.complete-btn, .trash-btn{
+    background-color: #ff6f46;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn{
+    background-color: green;
+}
+
+.fa-check, .fa-trash{
+    pointer-events: none;
+}
+
+.complete {
+    text-decoration: line-through;
+    opacity: 0.5;
+
+}
+
+footer{
+    border-top: 1px solid black;
+    /* background-color: orangered; */
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    
+}
+
+footer button{
+    background-color: #ff6f46;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.complete-filter{
+    background-color: green;
+}
+
+.all-filter{
+    background-color: blue;
+}
